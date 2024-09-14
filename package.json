@@ -1,0 +1,31 @@
+{
+  "name": "allfunds-tech-challenge-master",
+  "version": "1.0.0",
+  "description": "The user of the web application should be able to see a list of products and add them to the shopping cart.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@types/node": "^22.5.4",
+    "@types/react": "^18.3.5",
+    "jsdom": "^25.0.0",
+    "next": "^14.2.10",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "styled-components": "^6.1.13",
+    "usehooks-ts": "^3.1.0",
+    "vitest": "^2.1.0"
+  },
+  "devDependencies": {
+    "typescript": "5.6.2"
+  }
+}
