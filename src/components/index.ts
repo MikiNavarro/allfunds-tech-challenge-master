@@ -16,3 +16,4 @@ export { default as Plus } from "./SVGs/Plus";
 export { default as Minus } from "./SVGs/Minus";
 export { default as ArrowLeft } from "./SVGs/ArrowLeft";
 export { default as ShoppingCart } from "./SVGs/ShoppingCart";
+export { default as Heart } from "./SVGs/Heart";

@@ -1,6 +1,7 @@
 "use client";
 
 import { useContext, useState } from "react";
+import { updateProduct } from "@/app/actions";
 import { CartContext } from "@/app/context/CartContext";
 import { Card, Cart, Modal, ShoppingCart } from "@/components";
 import {
@@ -27,6 +28,16 @@ const MainPage = ({ products }: MainPageProps) => {
     setIsOpen(false);
   };
 
+  const onClickFavorite = ({ id, favorite }) => {
+    const updateFavorite = async () => {
+      await updateProduct({
+        id,
+        favorite,
+      });
+    };
+    updateFavorite();
+  };
+
   const quantity = cartItems.length;
 
   return (
@@ -49,6 +60,7 @@ const MainPage = ({ products }: MainPageProps) => {
               productDescription,
               image_url,
               stock,
+              favorite,
             }) => (
               <Card
                 key={id}
@@ -59,6 +71,8 @@ const MainPage = ({ products }: MainPageProps) => {
                 stock={stock}
                 alt={productName}
                 src={image_url}
+                favorite={favorite}
+                onClickFavorite={onClickFavorite}
               />
             )
           )}

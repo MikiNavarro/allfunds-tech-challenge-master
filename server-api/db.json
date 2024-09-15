@@ -3,20 +3,20 @@
     {
       "id": "41fd4fd9-95c7-4809-96db-a147d352fdbb",
       "image_url": "https://dummyimage.com/400x400/28200e/000&text=Unbranded Metal Chair",
-      "stock": 0,
+      "stock": 8,
       "productName": "Unbranded Metal Chair",
       "price": 43,
       "productDescription": "Porro tempore autem. Sunt molestias qui quod recusandae nemo quia optio. Nostrum aperiam officiis aut reprehenderit illo.",
-      "favorite": "1"
+      "favorite": 0
     },
     {
       "id": "20cc33f1-223b-4cf0-878d-fdedb3f60b56",
       "image_url": "https://dummyimage.com/400x400/2ee9f7/000&text=Handcrafted Metal Towels",
-      "stock": 27,
+      "stock": 28,
       "productName": "Handcrafted Metal Towels",
       "price": 98,
       "productDescription": "Rerum minima laudantium blanditiis dolorem dolores ut sint ut quidem. Est doloremque repellat excepturi dolor consequatur rerum qui. Facere ut vel et enim accusamus ipsum dolores aut. Eaque quo ut omnis unde quam error voluptas non iure.",
-      "favorite": 0
+      "favorite": "1"
     },
     {
       "id": "ab284424-8e46-4a3e-8e13-e179b0ab8bb5",
@@ -43,7 +43,7 @@
       "productName": "Incredible Fresh Ball",
       "price": 71,
       "productDescription": "Eveniet aliquid quisquam eveniet quam. Porro autem dolorem repellat minus occaecati neque non aperiam. Quaerat aut quia dolor illo et. Voluptatibus nemo eos eum.",
-      "favorite": 0
+      "favorite": "1"
     },
     {
       "id": "b590e450-1e0c-4344-92b8-e1f6cc260587",
@@ -93,7 +93,7 @@
     {
       "id": "7ac6d979-0771-4b8c-809d-eb8aa36be7f4",
       "image_url": "https://dummyimage.com/400x400/61cc38/000&text=Awesome Plastic Towels",
-      "stock": 0,
+      "stock": 16,
       "productName": "Awesome Plastic Towels",
       "price": 93,
       "productDescription": "Earum voluptates animi excepturi sed dolor nemo. Ab sed magnam modi saepe et est optio dolorum. Eum pariatur dolor voluptatibus. Ut magnam omnis. Culpa nisi provident cumque libero.",

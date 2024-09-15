@@ -1,8 +1,8 @@
 "use client";
 
-import { addItem, removeItem } from "@/utils";
 import { createContext, ReactNode, useEffect, useState } from "react";
-import { getProductById, updateProduct } from "../actions";
+import { addItem, removeItem } from "@/utils";
+import { getProductById, updateProduct } from "@/app/actions";
 
 export const CartContext = createContext({
   cartItems: [],

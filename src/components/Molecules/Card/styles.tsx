@@ -1,3 +1,4 @@
+import { Item } from "@/types";
 import Image from "next/image";
 import styled from "styled-components";
 
@@ -101,3 +102,21 @@ export const ItemsLeft = styled.span({
     display: "block",
   },
 });
+
+export const HeartContainer = styled.div<{ $isFavorite: Item["favorite"] }>(
+  ({ $isFavorite }) => ({
+    position: "absolute",
+    top: "5px",
+    right: "5px",
+    cursor: "pointer",
+
+    "&:hover": {
+      "> svg": {
+        stroke: $isFavorite === "1" ? "white" : "red",
+      },
+      " path": {
+        fill: $isFavorite === "1" ? "white" : "red",
+      },
+    },
+  })
+);

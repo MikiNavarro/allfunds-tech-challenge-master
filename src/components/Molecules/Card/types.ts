@@ -8,4 +8,12 @@ export interface CardProps {
   stock: Item["stock"];
   alt: Item["productName"];
   src: Item["image_url"];
+  favorite: Item["favorite"];
+  onClickFavorite: ({
+    id,
+    favorite,
+  }: {
+    id: string;
+    favorite: Item["favorite"];
+  }) => void;
 }

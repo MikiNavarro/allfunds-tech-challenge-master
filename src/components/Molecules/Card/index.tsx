@@ -1,12 +1,13 @@
 "use client";
 
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { CartContext } from "@/app/context/CartContext";
-import { Plus, Button } from "@/components";
+import { Plus, Button, Heart } from "@/components";
 import {
   Container,
   Description,
   FooterCard,
+  HeartContainer,
   ImageContainer,
   InnerContainer,
   ItemsLeft,
@@ -25,12 +26,22 @@ const Card = ({
   stock,
   alt,
   src,
+  favorite,
+  onClickFavorite,
 }: CardProps) => {
   const { addToCart } = useContext(CartContext);
   const disabled = stock === 0;
 
   return (
     <Container>
+      <HeartContainer
+        onClick={() =>
+          onClickFavorite({ id, favorite: favorite === "1" ? 0 : "1" })
+        }
+        $isFavorite={favorite}
+      >
+        <Heart size={24} color={favorite ? "red" : "white"} />
+      </HeartContainer>
       <ImageContainer>
         <StyledImage
           width={200}
