@@ -79,7 +79,7 @@
       "productName": "Fantastic Fresh Car",
       "price": 23,
       "productDescription": "Rem et id blanditiis deleniti et. Consectetur illo veniam. Et dolores voluptatem ullam et error quis aut. Corrupti aut et aut id. Unde iusto et qui doloremque vel commodi alias.",
-      "favorite": 0
+      "favorite": "1"
     },
     {
       "id": "11a7aee9-d712-4395-9c35-bde70c9f0171",
@@ -97,7 +97,7 @@
       "productName": "Awesome Plastic Towels",
       "price": 93,
       "productDescription": "Earum voluptates animi excepturi sed dolor nemo. Ab sed magnam modi saepe et est optio dolorum. Eum pariatur dolor voluptatibus. Ut magnam omnis. Culpa nisi provident cumque libero.",
-      "favorite": 0
+      "favorite": "1"
     },
     {
       "id": "ea46848e-f2fe-4d8f-a0b2-c30c0f1d2417",
@@ -115,7 +115,7 @@
       "productName": "Handcrafted Granite Pants",
       "price": 4,
       "productDescription": "Impedit nihil dolorem. Illum reprehenderit sit. Doloribus quo reprehenderit beatae est vero. Expedita ut praesentium. Incidunt quisquam a dolore a animi. Voluptas molestiae aut fuga.",
-      "favorite": 0
+      "favorite": "1"
     },
     {
       "id": "9dbcefef-804d-483d-8e1c-28941866a85c",
@@ -151,7 +151,7 @@
       "productName": "Licensed Concrete Gloves",
       "price": 68,
       "productDescription": "Magnam rerum dolorem similique architecto placeat ullam quidem. Reprehenderit aut quasi totam tempora et iste dolorem et nesciunt. Quis ut voluptatem. Quas ipsum et.",
-      "favorite": 0
+      "favorite": "1"
     },
     {
       "id": "a203b76b-2ed7-4a5c-aa2a-b02d94027edd",
@@ -340,7 +340,7 @@
       "productName": "Rustic Cotton Bacon",
       "price": 85,
       "productDescription": "Assumenda iure nobis facere distinctio cum ratione. Ullam sed soluta facilis doloribus consequuntur maiores aut repellendus. Et consequuntur temporibus autem voluptas ab.",
-      "favorite": 0
+      "favorite": "1"
     },
     {
       "id": "c3801eb6-6ee8-4358-86a2-7e1d9a94f68e",
@@ -358,7 +358,7 @@
       "productName": "Handmade Metal Ball",
       "price": 97,
       "productDescription": "Corporis quod fuga neque saepe eos sit. Possimus necessitatibus quas molestiae omnis magnam labore. Occaecati consequatur temporibus fuga laboriosam omnis atque nihil ut. Ut nisi illum sint dicta eligendi voluptas.",
-      "favorite": 0
+      "favorite": "1"
     },
     {
       "id": "6976507d-8eaa-4433-9226-d41cae37ae87",
@@ -367,7 +367,7 @@
       "productName": "Small Wooden Keyboard",
       "price": 19,
       "productDescription": "Temporibus soluta quia culpa nulla aspernatur ratione facere excepturi. Deleniti aut sunt et eos. Accusantium aliquam deserunt est nulla necessitatibus provident eius nobis. Dolorem tempora dolores quibusdam iure quae ea ratione dolore esse. Architecto amet atque labore ut quia. Vel quos voluptas ipsum.",
-      "favorite": 0
+      "favorite": "1"
     },
     {
       "id": "7957a856-eb41-4043-8db7-26c4e3eeb7e7",
@@ -412,7 +412,7 @@
       "productName": "Ergonomic Cotton Cheese",
       "price": 33,
       "productDescription": "Beatae ut ipsum voluptatem rem et aut provident soluta omnis. Veritatis accusantium recusandae libero adipisci nihil labore a sit quos. Accusamus sed eveniet fugiat. Ut ut minima iure.",
-      "favorite": 0
+      "favorite": "1"
     },
     {
       "id": "9f780033-6fea-4573-b46b-da5d4a59513a",
@@ -421,7 +421,7 @@
       "productName": "Refined Soft Soap",
       "price": 13,
       "productDescription": "Soluta alias magni magni sed voluptatem recusandae dicta praesentium. Iste porro sit ex a quia. Non dignissimos ipsa minus ducimus eligendi architecto. Omnis labore ab quae eos omnis. Possimus nobis assumenda amet beatae eum fugit.",
-      "favorite": 0
+      "favorite": "1"
     },
     {
       "id": "4b2b249d-f337-4596-961f-7cc3350fc658",

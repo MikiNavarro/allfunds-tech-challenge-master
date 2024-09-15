@@ -1,14 +1,15 @@
 "use client";
 
-import { useContext, useState } from "react";
+import { useContext, useMemo, useState } from "react";
 import { updateProduct } from "@/app/actions";
 import { CartContext } from "@/app/context/CartContext";
-import { Card, Cart, Modal, ShoppingCart } from "@/components";
+import { Button, Card, Cart, Modal, ShoppingCart } from "@/components";
 import {
   CartButtonContainer,
   CartButtonInnerContainer,
   CartContainer,
   Container,
+  HeartButtonContainer,
   List,
   ProductsContainer,
   QuantityContainer,
@@ -19,6 +20,13 @@ import type { MainPageProps } from "./types";
 const MainPage = ({ products }: MainPageProps) => {
   const { cartItems } = useContext(CartContext);
   const [isOpen, setIsOpen] = useState(false);
+  const [showFavorites, setShowFavorites] = useState(false);
+
+  const filteredProducts = useMemo(() => {
+    return showFavorites
+      ? products.filter(({ favorite }) => showFavorites && favorite === "1")
+      : products;
+  }, [products, showFavorites]);
 
   const onOpenModal = () => {
     setIsOpen(true);
@@ -51,8 +59,14 @@ const MainPage = ({ products }: MainPageProps) => {
       <Modal isOpen={isOpen} onCloseModal={onCloseModal} />
       <ProductsContainer>
         <Title>Products</Title>
+        <HeartButtonContainer>
+          <Button
+            text={`Show ${showFavorites ? "all" : "favorites"}`}
+            onClick={() => setShowFavorites(!showFavorites)}
+          />
+        </HeartButtonContainer>
         <List>
-          {products.map(
+          {filteredProducts.map(
             ({
               id,
               productName,

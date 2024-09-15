@@ -62,6 +62,7 @@ export const QuantityContainer = styled.div({
 export const ProductsContainer = styled.div({
   display: "flex",
   flexDirection: "column",
+  alignItems: "center",
   gap: "12px",
   padding: "24px 0",
   width: "100%",
@@ -78,4 +79,8 @@ export const CartContainer = styled.div({
     display: "flex",
     width: "30%",
   },
+});
+
+export const HeartButtonContainer = styled.div({
+  width: "fit-content",
 });
