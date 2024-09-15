@@ -13,15 +13,27 @@ export const CartContext = createContext({
 });
 
 export const CartProvider = ({ children }: { children: ReactNode }) => {
-  const [cartItems, setCartItems] = useState(() => {
-    const savedCart = localStorage.getItem("cart");
-    return savedCart ? JSON.parse(savedCart) : [];
-  });
+  const [cartItems, setCartItems] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cartItems));
+    if (typeof window !== "undefined") {
+      const savedCart = localStorage.getItem("cart");
+      if (savedCart) {
+        setCartItems(JSON.parse(savedCart));
+      }
+    }
+    setIsMounted(true);
+  }, []);
 
+  useEffect(() => {
+    if (isMounted) {
+      localStorage.setItem("cart", JSON.stringify(cartItems));
+    }
+  }, [cartItems, isMounted]);
+
+  useEffect(() => {
     const getTotalPrice = async () => {
       const items = await Promise.all(
         cartItems.map(async ({ id, quantity }) => {
@@ -33,8 +45,11 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
         items.reduce((acc, { price, quantity }) => acc + price * quantity, 0)
       );
     };
-    getTotalPrice();
-  }, [cartItems]);
+
+    if (isMounted) {
+      getTotalPrice();
+    }
+  }, [cartItems, isMounted]);
 
   const addToCart = async (id) => {
     const product = await getProductById({ id });
