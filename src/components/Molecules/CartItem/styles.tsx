@@ -28,12 +28,6 @@ export const NameTypography = styled.span({
   textAlign: "center",
 });
 
-export const ButtonsContainer = styled.div({
-  display: "flex",
-  gap: "16px",
-  alignItems: "center",
-});
-
 export const PriceTypography = styled.span({
   width: "20%",
 });

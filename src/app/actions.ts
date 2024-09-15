@@ -29,6 +29,8 @@ export const updateProduct = async ({
     },
     body: JSON.stringify({ stock, favorite }),
   });
+
   revalidatePath("/");
+
   return await data.json();
 };

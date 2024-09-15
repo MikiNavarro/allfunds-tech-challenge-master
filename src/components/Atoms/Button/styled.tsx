@@ -4,16 +4,16 @@ export const StyledButton = styled.button({
   display: "flex",
   alignItems: "center",
   gap: "10px",
-  padding: "5px",
+  padding: "8px",
   borderRadius: "8px",
   cursor: "pointer",
-  backgroundColor: "#2196f3",
-  border: "1px solid #2196f3",
-  color: "#141a21",
+  backgroundColor: "#33a771",
+  border: "1px solid #33a771",
+  color: "white",
 
   "&:hover": {
-    backgroundColor: "#2369aa",
-    border: "1px solid #2369aa",
+    backgroundColor: "#29875a",
+    border: "1px solid #29875a",
   },
 
   "&:disabled": {

@@ -6,7 +6,6 @@ const ArrowLeft = ({ size, color = "#000000" }: SVGProps) => (
     height={size}
     viewBox="0 -6.5 36 36"
     version="1.1"
-    xmlns="http://www.w3.org/2000/svg"
     fill={color}
   >
     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>

@@ -7,13 +7,16 @@ export const Container = styled.div({
   height: "100dvh",
   color: "white",
   justifyContent: "space-between",
-  padding: "16px",
+  padding: "50px 16px",
+  "@media (width > 1200px)": {
+    padding: "24px 16px 50px",
+  },
 });
 
 export const Title = styled.h2({
   display: "flex",
   justifyContent: "center",
-  alignItems: "center",
+  alignItems: "top",
   fontSize: "2rem",
   color: "white",
   letterSpacing: "1px",

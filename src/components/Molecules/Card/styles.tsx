@@ -14,10 +14,10 @@ export const Container = styled.div({
   borderRadius: "6px",
   backgroundColor: "#1c252e",
   color: "white",
-  transition: "all 500ms",
+  transition: "all 300ms",
   "&:hover": {
-    boxShadow: "6px 6px 10px 0px rgba(33, 150, 243, 0.4)",
-    transition: "all 500ms",
+    boxShadow: "6px 6px 10px 0px rgba(51, 167, 113, 0.4)",
+    transition: "all 300ms",
   },
 
   "@keyframes show": {

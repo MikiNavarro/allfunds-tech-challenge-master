@@ -60,7 +60,7 @@ const Card = ({
         <FooterCard>
           <ItemsLeft>{stock} left</ItemsLeft>
           <Button
-            Svg={<Plus size={12} color={disabled ? "lightgray" : "#141a21"} />}
+            Svg={<Plus size={12} color={disabled ? "lightgray" : "white"} />}
             text="Add"
             onClick={() => addToCart(id)}
             disabled={disabled}

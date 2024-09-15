@@ -54,7 +54,7 @@ export const QuantityContainer = styled.div({
   width: "24px",
   height: "24px",
   borderRadius: "50%",
-  backgroundColor: "#2196f3",
+  backgroundColor: "#33a771",
   color: "white",
   fontSize: "0.8rem",
 });

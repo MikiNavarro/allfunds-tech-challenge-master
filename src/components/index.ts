@@ -4,6 +4,7 @@ export { default as Button } from "./Atoms/Button";
 // Molecules
 export { default as Card } from "./Molecules/Card";
 export { default as CartItem } from "./Molecules/CartItem";
+export { default as Counter } from "./Molecules/Counter";
 
 // Organisms
 

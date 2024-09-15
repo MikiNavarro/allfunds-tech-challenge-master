@@ -2,16 +2,15 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { Button, Minus, Plus } from "@/components";
+import { getProductById } from "@/app/actions";
+import { Counter } from "@/components";
 import {
-  ButtonsContainer,
   Container,
   InfoContainer,
   NameTypography,
   PriceTypography,
   ImageContainer,
 } from "./styles";
-import { Item } from "@/types";
 import type { CartItemProps } from "./types";
 
 const CartItem = ({
@@ -25,8 +24,7 @@ const CartItem = ({
 
   useEffect(() => {
     async function fetchItem() {
-      const response = await fetch(`http://localhost:3000/grocery/${id}`);
-      const data: Item = await response.json();
+      const data = await getProductById({ id });
       setItem(data);
       setCurrentStock(data.stock);
     }
@@ -50,24 +48,18 @@ const CartItem = ({
       </ImageContainer>
       <InfoContainer>
         <NameTypography>{item.productName}</NameTypography>
-        <ButtonsContainer>
-          <Button
-            Svg={<Minus size={16} />}
-            onClick={() => {
-              onClickMinus();
-              setCurrentStock(currentStock + 1);
-            }}
-          />
-          <p>{quantity}</p>
-          <Button
-            Svg={<Plus size={16} />}
-            onClick={() => {
-              onClickPlus();
-              setCurrentStock(currentStock - 1);
-            }}
-            disabled={disabled}
-          />
-        </ButtonsContainer>
+        <Counter
+          number={quantity}
+          isDisabled={disabled}
+          onClickMinus={() => {
+            onClickMinus();
+            setCurrentStock(currentStock + 1);
+          }}
+          onClickPlus={() => {
+            onClickPlus();
+            setCurrentStock(currentStock - 1);
+          }}
+        />
       </InfoContainer>
       <PriceTypography>{item.price * quantity} €</PriceTypography>
     </Container>
